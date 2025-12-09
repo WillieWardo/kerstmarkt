@@ -51,7 +51,8 @@
         .big {
             width: 75%;
             max-width: 700px;
-            border-radius: 10px;
+            /* geen rounded corners */
+            border: none;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease;
         }
@@ -65,8 +66,7 @@
             max-width: 90px;
             margin: 15px 0 40px 0;
             border: 2px solid white;
-            border-radius: 5px;
-            transition: all 0.3s ease;
+            /* geen rounded corners */
         }
 
         .small:hover {
@@ -86,15 +86,13 @@
 
     <div class="images-container">
 
-        <!-- GROTE FOTO (foto.png) -->
-        <a href="https://sxtc.ru" target="_blank">
-            <img src="foto.png" class="big">
-        </a>
+        <!-- GEEN LINK meer op de grote foto -->
+        <img src="foto.png" class="big">
 
-        <!-- SIMPELE LINK -->
+        <!-- SIMPELE ONION LINK -->
         <a href="HIER-KOMT-JE-ONION-LINK">onion</a>
 
-        <!-- ADVERTENTIE (ad.png) -->
+        <!-- ENIGE FOTO MET LINK: ad.png -->
         <a href="https://sxtc.ru" target="_blank">
             <img src="ad.png" class="small">
         </a>
