@@ -3,23 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foto in het midden</title>
+    <title>Kertmarkt Ballen Verkoop</title>
     <style>
         body {
             margin: 0;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: red;
         }
+
+        h1 {
+            font-size: 3em;
+            font-family: Arial, sans-serif;
+            margin-bottom: 30px;
+            animation: rgbColor 5s infinite;
+            text-align: center;
+        }
+
+        @keyframes rgbColor {
+            0% { color: rgb(255, 0, 0); }
+            25% { color: rgb(0, 255, 0); }
+            50% { color: rgb(0, 0, 255); }
+            75% { color: rgb(255, 255, 0); }
+            100% { color: rgb(255, 0, 0); }
+        }
+
         img {
             max-width: 80%;
             max-height: 80%;
+            margin: 10px 0;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <img src="foto.png" alt="Foto in het midden">
+    <!-- Titel helemaal bovenaan -->
+    <h1>Kertmarkt Ballen Verkoop</h1>
+
+    <!-- Hoofd foto -->
+    <a href="https://sxtc.ru" target="_blank">
+        <img src="foto.png" alt="Foto in het midden">
+    </a>
+
+    <!-- Tweede foto -->
+    <a href="https://sxtc.ru" target="_blank">
+        <img src="ad.png" alt="Extra afbeelding">
+    </a>
 </body>
 </html>
