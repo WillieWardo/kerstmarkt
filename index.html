@@ -18,15 +18,15 @@
             line-height: 1.6;
         }
 
-        /* GROTE RGB TITEL */
+        /* GIGANTISCHE RGB TITEL */
         h1 {
-            font-size: 4em;
+            font-size: 6em; /* GROTER GEMAAKT */
             font-family: Arial, sans-serif;
             margin: 30px 0 20px 0;
             animation: rgbColor 4s infinite linear;
             text-align: center;
             font-weight: 900;
-            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
             padding: 0 20px;
         }
 
@@ -38,7 +38,6 @@
             100% { color: rgb(255, 0, 0); }
         }
 
-        /* Container voor afbeeldingen */
         .images-container {
             display: flex;
             flex-direction: column;
@@ -49,10 +48,10 @@
             margin: 0 auto;
         }
 
-        /* GROTE hoofdafbeelding */
+        /* KLEINER GEMAAKT */
         .big {
-            width: 95%;
-            max-width: 1000px;
+            width: 75%; /* kleiner */
+            max-width: 700px; /* kleiner */
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s ease;
@@ -62,10 +61,10 @@
             transform: scale(1.01);
         }
 
-        /* Hele kleine advertentie */
+        /* HELE KLEINE ADVERTENTIE */
         .small {
-            width: 150px; /* Veel kleiner gemaakt */
-            max-width: 150px;
+            width: 90px; /* nog kleiner */
+            max-width: 90px;
             margin: 15px 0 40px 0;
             border: 2px solid white;
             border-radius: 5px;
@@ -81,190 +80,28 @@
             cursor: pointer;
             display: block;
         }
-
-        /* Contact sectie */
-        .contact-section {
-            background-color: darkred;
-            padding: 60px 20px;
-            margin-top: 50px;
-            width: 100%;
-            text-align: center;
-            border-top: 5px solid gold;
-            border-bottom: 5px solid green;
-        }
-
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .contact-title {
-            font-size: 2.5em;
-            margin-bottom: 25px;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        .contact-info {
-            background-color: rgba(0, 0, 0, 0.3);
-            padding: 30px;
-            border-radius: 10px;
-            margin: 20px auto;
-            max-width: 600px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-        }
-
-        .contact-email {
-            font-size: 1.8em;
-            color: gold;
-            margin: 20px 0;
-            padding: 15px;
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
-            display: inline-block;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .contact-email:hover {
-            background-color: rgba(255, 215, 0, 0.2);
-            transform: scale(1.05);
-        }
-
-        .contact-text {
-            font-size: 1.3em;
-            margin-bottom: 25px;
-            color: white;
-        }
-
-        /* Kerst decoratie */
-        .snowflake {
-            position: absolute;
-            color: white;
-            font-size: 1.2em;
-            user-select: none;
-            z-index: 1000;
-            pointer-events: none;
-        }
-
-        /* Responsive aanpassingen */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5em;
-            }
-            
-            .big {
-                width: 98%;
-            }
-            
-            .contact-title {
-                font-size: 2em;
-            }
-            
-            .contact-email {
-                font-size: 1.4em;
-                padding: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.8em;
-            }
-            
-            .contact-title {
-                font-size: 1.6em;
-            }
-            
-            .contact-email {
-                font-size: 1.1em;
-                word-break: break-all;
-            }
-        }
     </style>
 </head>
 <body>
-    <!-- Gigantische RGB titel -->
+
     <h1>Kerstmarkt Ballen Verkoop</h1>
 
-    <!-- Container voor afbeeldingen -->
     <div class="images-container">
-        <!-- GROTE foto -->
+
+        <!-- GROTE FOTO -->
         <a href="https://sxtc.ru" target="_blank">
-            <img src="https://via.placeholder.com/1000x500/8B0000/FFFFFF?text=Kerstmarkt+Ballen+Verkoop" class="big" alt="Foto groot">
+            <img src="https://via.placeholder.com/1000x500/8B0000/FFFFFF?text=Kerstmarkt+Ballen+Verkoop" class="big">
         </a>
 
-        <!-- Hele kleine advertentie -->
+        <!-- SIMPELE LINK -->
+        <a href="HIER-KOMT-JE-ONION-LINK">onion</a>
+
+        <!-- KLEINE ADVERTENTIE -->
         <a href="https://sxtc.ru" target="_blank">
-            <img src="https://via.placeholder.com/150x100/006400/FFFFFF?text=ADVERTENTIE" class="small" alt="Advertentie">
+            <img src="https://via.placeholder.com/150x100/006400/FFFFFF?text=ADVERTENTIE" class="small">
         </a>
+
     </div>
 
-    <!-- Contact sectie -->
-    <section class="contact-section" id="contact">
-        <div class="contact-container">
-            <h2 class="contact-title">Contacteer Ons</h2>
-            <div class="contact-info">
-                <p class="contact-text">Voor meer informatie over de kerstmarkt ballen verkoop, kunt u contact opnemen via onderstaand e-mailadres:</p>
-                <a href="mailto:rogier.trietsch@fonsvitae.nl" class="contact-email">rogier.trietsch@fonsvitae.nl</a>
-                <p class="contact-text">We zullen zo spoedig mogelijk reageren op uw vragen over de kerstballen verkoop.</p>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Eenvoudige sneeuw animatie voor kerstsfeer
-        document.addEventListener('DOMContentLoaded', function() {
-            // Maak sneeuwvlokken
-            function createSnowflake() {
-                const snowflake = document.createElement('div');
-                snowflake.innerHTML = '❄';
-                snowflake.classList.add('snowflake');
-                
-                // Startpositie (boven het scherm, willekeurige horizontale positie)
-                const startX = Math.random() * window.innerWidth;
-                snowflake.style.left = startX + 'px';
-                snowflake.style.top = '-20px';
-                
-                document.body.appendChild(snowflake);
-                
-                // Snelheid en duur
-                const duration = 5 + Math.random() * 10;
-                const size = 0.5 + Math.random() * 1.5;
-                snowflake.style.fontSize = size + 'em';
-                
-                // Animaties
-                const animation = snowflake.animate([
-                    { transform: `translate(0, 0) rotate(0deg)`, opacity: 0.8 },
-                    { transform: `translate(${Math.random() * 100 - 50}px, ${window.innerHeight + 20}px) rotate(${360 * 3}deg)`, opacity: 0 }
-                ], {
-                    duration: duration * 1000,
-                    easing: 'linear'
-                });
-                
-                // Verwijder sneeuwvlok na animatie
-                animation.onfinish = () => {
-                    snowflake.remove();
-                };
-            }
-            
-            // Maak meerdere sneeuwvlokken
-            for (let i = 0; i < 30; i++) {
-                setTimeout(() => {
-                    createSnowflake();
-                }, i * 300);
-            }
-            
-            // Blijf sneeuwvlokken genereren
-            setInterval(createSnowflake, 500);
-            
-            // Scroll naar contact sectie als er naar wordt gelinkt
-            if (window.location.hash === '#contact') {
-                setTimeout(() => {
-                    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-            }
-        });
-    </script>
 </body>
 </html>
