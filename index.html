@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kerstmarkt Ballen Verkoop</title>
+
     <style>
         * {
             margin: 0;
@@ -16,6 +17,32 @@
             background-color: red;
             color: white;
             line-height: 1.6;
+        }
+
+        /* NAVIGATIEBALK */
+        .navbar {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            position: sticky;
+            top: 0;
+            backdrop-filter: blur(4px);
+        }
+
+        .navbar a {
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: gold;
+            text-shadow: 0 0 10px gold;
         }
 
         /* GIGANTISCHE RGB TITEL */
@@ -57,16 +84,12 @@
         .big:hover {
             transform: scale(1.01);
         }
-        
+
         .small {
-    width: 350px;
-    max-width: 350px;
-    margin: 15px 0 40px 0;
-    border: 2px solid white;
-}
-
-
-
+            width: 350px;
+            max-width: 350px;
+            margin: 15px 0 40px 0;
+            border: 2px solid white;
         }
 
         .small:hover {
@@ -81,6 +104,13 @@
     </style>
 </head>
 <body>
+
+    <!-- NAVIGATIE -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Assortiment</a>
+        <a href="team.html">Website Team</a>
+    </nav>
 
     <h1>Kerstmarkt Ballen Verkoop</h1>
 
